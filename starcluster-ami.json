@@ -20,11 +20,14 @@
     "inline": [
       "sleep 30",
       "sudo apt-get -y update",
-      "sudo apt-get -y upgrade"
+      "sudo apt-get -y upgrade",
+
       "sudo apt-get install -y nfs-kernel-server nfs-common portmap",
   	  "sudo ln -s /etc/init.d/nfs-kernel-server /etc/init.d/nfs",
   	  "sudo ln -s /lib/systemd/system/nfs-kernel-server.service /lib/systemd/system/nfs.service",
-      "sudo apt-get install -y gridengine-client gridengine-common gridengine-master gridengine-qmon gridengine-exec gridengine-drmaa1.0",
+
+      "curl -L https://github.com/brunogrande/starcluster-ami-config/blob/master/sge.tar.gz?raw=true | sudo tar -xz -C /opt/",
+
       "sudo sh -c 'echo deb http://www.duinsoft.nl/pkg debs all > /etc/apt/sources.list.d/duinsoft.list'",
       "sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 0xE18CE6625CB26B26",
       "sudo apt-get -y update",
