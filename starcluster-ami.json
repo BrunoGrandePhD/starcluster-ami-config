@@ -31,7 +31,9 @@
       "sudo sh -c 'echo deb http://www.duinsoft.nl/pkg debs all > /etc/apt/sources.list.d/duinsoft.list'",
       "sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 0xE18CE6625CB26B26",
       "sudo apt-get -y update",
-      "sudo apt-get -y install update-sun-jre"
+      "sudo apt-get -y install update-sun-jre",
+
+      "sudo apt-get -y install build-essential"
     ]
   }]
 }
