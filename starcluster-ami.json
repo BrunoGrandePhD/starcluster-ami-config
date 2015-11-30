@@ -12,7 +12,7 @@
     "source_ami": "{{user `source_ami`}}",
     "instance_type": "c3.large",
     "ssh_username": "ubuntu",
-    "ami_name": "StarCluster AMI (Ubuntu 14.04 LTS)",
+    "ami_name": "StarCluster AMI (Ubuntu 14.04 LTS {{timestamp}})",
     "enhanced_networking": true
   }],
   "provisioners": [{
