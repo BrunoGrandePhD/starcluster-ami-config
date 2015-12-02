@@ -22,7 +22,7 @@
       "sudo apt-get -y update",
       "sudo apt-get -y upgrade",
 
-      "sudo apt-get -y install build-essential git",
+      "sudo apt-get -y install build-essential git parallel",
 
       "sudo apt-get install -y nfs-kernel-server nfs-common rpcbind upstart",
       "sudo ln -s /etc/init.d/nfs-kernel-server /etc/init.d/nfs",
