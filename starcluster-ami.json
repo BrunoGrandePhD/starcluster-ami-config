@@ -40,7 +40,11 @@
       "sudo sh -c 'echo deb http://cran.stat.sfu.ca/bin/linux/ubuntu trusty/ > /etc/apt/sources.list.d/cran.list'",
       "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9",
       "sudo apt-get -y update",
-      "sudo apt-get -y install r-base r-base-dev"
+      "sudo apt-get -y install r-base r-base-dev",
+
+      "sudo apt-get -yle install python-pip",
+      "sudo pip install ruffus==2.4.1 pyyaml==3.11 drmaa==0.7.6",
+      "sudo pip install -i https://testpypi.python.org/pypi kronos"
     ]
   }]
 }
