@@ -27,6 +27,8 @@
       "sudo apt-get install -y nfs-kernel-server nfs-common rpcbind upstart",
       "sudo ln -s /etc/init.d/nfs-kernel-server /etc/init.d/nfs",
       "sudo ln -s /lib/systemd/system/nfs-kernel-server.service /lib/systemd/system/nfs.service",
+      "sudo ln -s /lib/init/upstart-job /etc/init.d/portmap",
+      "sudo ln -s /lib/init/upstart-job /etc/init.d/portmap-wait",
 
       "curl -L https://github.com/brunogrande/starcluster-ami-config/blob/master/sge.tar.gz?raw=true | sudo tar -xz -C /opt/",
 
