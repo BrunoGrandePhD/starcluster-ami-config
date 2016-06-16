@@ -43,8 +43,7 @@
       "sudo apt-get -y install r-base r-base-dev",
 
       "sudo apt-get -y install python-pip",
-      "sudo pip install ruffus==2.4.1 pyyaml==3.11 drmaa==0.7.6",
-      "sudo pip install -i https://testpypi.python.org/pypi kronos"
+      "sudo pip install kronos-pipeliner"
     ]
   }]
 }
